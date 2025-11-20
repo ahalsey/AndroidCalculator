@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun onEqualsClick(view: View) {
+    fun onEqualsClick() {
         if (currentNumber.isNotEmpty() && previousNumber.isNotEmpty() && operation.isNotEmpty()) {
             calculate()
             operationTextView.text = ""
@@ -82,7 +82,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun onClearClick(view: View) {
+    fun onClearClick() {
         currentNumber = ""
         previousNumber = ""
         operation = ""
